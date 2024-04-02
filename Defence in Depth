@@ -1,0 +1,23 @@
+graph LR
+A[Physical Security] --> B[Network Security]
+B --> C{Perimeter Firewall}
+B --> D{IDS/IPS}
+B --> E{Network Segmentation}
+C --> F[System Security]
+D --> F
+E --> F
+F --> G{Host-based Firewall}
+F --> H{Antivirus/Anti-Malware}
+F --> I{Vulnerability Management}
+G --> J[Application Security]
+H --> J
+I --> J
+J --> K{Web Application Firewall}
+J --> L{Secure Coding Practices}
+J --> M{RASP}
+K --> N[Data Security]
+L --> N
+M --> N
+N --> O{Data Encryption}
+N --> P{DLP}
+N --> Q{Data Access Controls}
